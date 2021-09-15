@@ -16,17 +16,14 @@ navigation component, MVI, livedata, coroutines, flow, koin for DI, room db, ret
 *   **[Download latest debug APK here] (https://nightly.link/Kotlin-Android-Open-Source/MVI-Coroutines-Flow/workflows/build/master/app-debug.zip)**.
 
 
-| Get Started | Loading View |
+| Get Started | Loading View | Recycler View |
 | --------------- | ---------------- |
-| <img src="Screenshot_1.png" height="480"> | <img src="Screenshot_2.png" height="480"> |
+| <img src="Screenshot_1.png" height="480"> | <img src="Screenshot_2.png" height="480"> |  <img src="Screenshot_3.png" height="480"> |
 
-| Recycler View | Details View  |
+|  Details View  | WishList is Empty | Info Task  |
 | ------------ | ------------ |
-| <img src="Screenshot_3.png" height="480"> | <img src="Screenshot_4.png" height="480"> |
+| <img src="Screenshot_4.png" height="480"> |  <img src="Screenshot_5.png" height="480"> | <img src="Screenshot_6.png" height="480"> |
 
-| WishList is Empty | Info Task  |
-| ------------ | ------------ |
-| <img src="Screenshot_5.png" height="480"> | <img src="Screenshot_6.png" height="480"> |
 
 
 <!-- Pixel 3 XL API 30 -->
