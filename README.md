@@ -17,11 +17,11 @@ navigation component, MVI, livedata, coroutines, flow, koin for DI, room db, ret
 
 
 | Get Started | Loading View | Recycler View |
-| --------------- | ---------------- |
+| --------------- | ---------------- | ---------------- |
 | <img src="Screenshot_1.png" height="480"> | <img src="Screenshot_2.png" height="480"> |  <img src="Screenshot_3.png" height="480"> |
 
 |  Details View  | WishList is Empty | Info Task  |
-| ------------ | ------------ |
+| ------------ | ------------ | ---------------- |
 | <img src="Screenshot_4.png" height="480"> |  <img src="Screenshot_5.png" height="480"> | <img src="Screenshot_6.png" height="480"> |
 
 
