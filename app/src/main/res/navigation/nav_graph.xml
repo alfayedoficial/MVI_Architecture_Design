@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:id="@+id/nav_graph"
+	 app:startDestination="@id/homeFragment">
+
+	 <fragment
+		  android:id="@+id/getStartedFragment"
+		  android:name="com.alialfayed.mviarchitecturedesign.feature.getStated.GetStartedFragment"
+		  android:label="fragment_get_started"
+		  tools:layout="@layout/fragment_get_started">
+		  <action
+			   android:id="@+id/action_getStartedFragment_to_homeFragment"
+			   app:destination="@id/homeFragment"
+			   app:enterAnim="@anim/slide_in_right"
+			   app:exitAnim="@anim/slide_out_left"
+			   app:popEnterAnim="@anim/slide_in_left"
+			   app:popExitAnim="@anim/slide_out_right"
+			   app:popUpTo="@id/getStartedFragment"
+			   app:popUpToInclusive="true" />
+	 </fragment>
+	 <fragment
+		  android:id="@+id/homeFragment"
+		  android:name="com.alialfayed.mviarchitecturedesign.feature.home.HomeFragment"
+		  android:label="fragment_home"
+		  tools:layout="@layout/fragment_home">
+		  <action
+			   android:id="@+id/action_homeFragment_to_detailsHomeFragment"
+			   app:destination="@id/detailsHomeFragment"
+			   app:enterAnim="@anim/slide_in_right"
+			   app:exitAnim="@anim/slide_out_left"
+			   app:popEnterAnim="@anim/slide_in_left"
+			   app:popExitAnim="@anim/slide_out_right" />
+	 </fragment>
+	 <fragment
+		  android:id="@+id/detailsHomeFragment"
+		  android:name="com.alialfayed.mviarchitecturedesign.feature.detailsHome.DetailsHomeFragment"
+		  android:label="fragment_details_home"
+		  tools:layout="@layout/fragment_details_home">
+		  <argument
+			   android:name="model"
+			   app:argType="com.alialfayed.mviarchitecturedesign.core.domain.model.DataItem" />
+	 </fragment>
+	 <fragment
+		  android:id="@+id/wishListFragment"
+		  android:name="com.alialfayed.mviarchitecturedesign.feature.wishList.WishListFragment"
+		  android:label="fragment_wish_list"
+		  tools:layout="@layout/fragment_wish_list">
+		  <action
+			   android:id="@+id/action_wishListFragment_to_detailsHomeFragment"
+			   app:destination="@id/detailsHomeFragment"
+			   app:enterAnim="@anim/slide_in_right"
+			   app:exitAnim="@anim/slide_out_left"
+			   app:popEnterAnim="@anim/slide_in_left"
+			   app:popExitAnim="@anim/slide_out_right" />
+	 </fragment>
+	 <fragment
+		  android:id="@+id/infoFragment"
+		  android:name="com.alialfayed.mviarchitecturedesign.feature.info.InfoFragment"
+		  android:label="InfoFragment"
+		  tools:layout="@layout/fragment_info" />
+</navigation>

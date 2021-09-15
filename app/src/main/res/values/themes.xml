@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+	 <!-- Base application theme. -->
+	 <style name="Theme.MVIArchitectureDesign" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+		  <!-- Primary brand color. -->
+		  <item name="colorPrimary">@color/purple_500</item>
+		  <item name="colorPrimaryVariant">@color/purple_700</item>
+		  <item name="colorOnPrimary">@color/white</item>
+		  <!-- Secondary brand color. -->
+		  <item name="colorSecondary">@color/teal_200</item>
+		  <item name="colorSecondaryVariant">@color/teal_700</item>
+		  <item name="colorOnSecondary">@color/black</item>
+		  <!-- Status bar color. -->
+		  <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+		  <!-- Customize your theme here. -->
+	 </style>
+
+	 <style name="FontRegular">
+		  <item name="fontFamily">@font/popins_regular</item>
+	 </style>
+
+	 <style name="FontBold">
+		  <item name="fontFamily">@font/poppins_bold</item>
+	 </style>
+
+	 <style name="FontMedium">
+		  <item name="fontFamily">@font/poppins_medium</item>
+	 </style>
+
+	 <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+		  <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay1</item>
+	 </style>
+
+	 <style name="ShapeAppearanceOverlay1" parent="">
+		  <item name="cornerFamily">rounded</item>
+		  <item name="cornerSizeTopRight">30dp</item>
+		  <item name="cornerSizeTopLeft">30dp</item>
+		  <item name="cornerSizeBottomRight">0dp</item>
+		  <item name="cornerSizeBottomLeft">0dp</item>
+	 </style>
+
+	 <style name="progressBarStyle">
+		  <item name="colorAccent">@color/purple_700</item> <!-- Whatever color you want-->
+	 </style>
+
+</resources>

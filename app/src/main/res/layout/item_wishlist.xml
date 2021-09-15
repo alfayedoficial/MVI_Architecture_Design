@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+	 xmlns:tools="http://schemas.android.com/tools">
+
+	 <data>
+
+		  <variable
+			   name="model"
+			   type="com.alialfayed.mviarchitecturedesign.core.room.WishListJob" />
+	 </data>
+
+	 <com.google.android.material.card.MaterialCardView
+		  android:id="@+id/cardParent"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:layout_marginStart="3dp"
+		  android:layout_marginTop="3dp"
+		  android:layout_marginEnd="3dp"
+		  app:cardBackgroundColor="@color/background_color"
+		  app:cardCornerRadius="@dimen/_5sdp"
+		  app:cardElevation="0dp"
+		  app:cardMaxElevation="0dp"
+		  app:contentPadding="5dp">
+
+		  <LinearLayout
+			   android:gravity="center"
+			   android:layout_width="match_parent"
+			   android:layout_height="wrap_content"
+			   android:orientation="horizontal">
+
+			   <FrameLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+
+					<ProgressBar
+						 android:id="@+id/itemProgress"
+						 style="@style/Widget.AppCompat.ProgressBar"
+						 android:layout_width="@dimen/_25sdp"
+						 android:layout_height="@dimen/_25sdp"
+						 android:layout_gravity="center"
+						 android:elevation="@dimen/_3sdp"
+						 android:theme="@style/progressBarStyle" />
+
+					<ImageView
+						 android:layout_width="60dp"
+						 android:layout_height="60dp"
+						 android:layout_gravity="center"
+						 android:scaleType="center"
+						 app:bindImgUrl="@{model.profileImage}"
+						 app:bindProgressItem="@{itemProgress}"
+						 tools:ignore="ContentDescription"
+						 tools:src="@drawable/place_holder" />
+
+			   </FrameLayout>
+
+			   <LinearLayout
+					android:layout_marginStart="5dp"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<TextView
+						 android:id="@+id/txtTitle"
+						 style="@style/FontRegular"
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:textColor="@color/text_color"
+						 app:bindString="@{model.name}"
+						 tools:text="Quality 48" />
+
+					<TextView
+						 android:id="@+id/txtTitle2"
+						 style="@style/FontMedium"
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:textAlignment="viewStart"
+						 android:textColor="@color/text_color2"
+						 app:bindString="@{model.jobTitle}"
+						 tools:text="Agent" />
+			   </LinearLayout>
+
+			   <ImageButton
+					android:id="@+id/delete"
+					android:layout_width="48dp"
+					android:layout_height="48dp"
+					android:background="@android:color/transparent"
+					android:padding="5dp"
+					android:src="@drawable/ic_delete"
+					tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
+		  </LinearLayout>
+
+
+	 </com.google.android.material.card.MaterialCardView>
+
+</layout>
