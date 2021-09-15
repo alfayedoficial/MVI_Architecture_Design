@@ -13,7 +13,7 @@
 *   You should use the following technologies.
 navigation component, MVI, livedata, coroutines, flow, koin for DI, room db, retrofit, Moshi for JSON serialization
 
-*   **[Download latest debug APK here] (https://nightly.link/Kotlin-Android-Open-Source/MVI-Coroutines-Flow/workflows/build/master/app-debug.zip)**.
+*   **[Download latest debug APK here] (https://github.com/alfayedoficial/MVI_Architecture_Design/blob/master/debug/app-debug.apk)**.
 
 
 | Get Started | Loading View | Recycler View |
