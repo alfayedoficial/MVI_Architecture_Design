@@ -51,26 +51,7 @@ class OneSingleActivity(override val layoutResourceId: Int = R.layout.activity_o
     }
 
     override fun onBackPressed() {
-
-        //Log.i(getString(R.string.sign_in),currentFragmentID.toString())
-        when (navController.currentDestination?.id) {
-            R.id.homeFragment -> {
-                if (backPressed + 2000 > System.currentTimeMillis()) {
-                    super.onBackPressed()
-                } else {
-                    Toast.makeText(this, getString(R.string.press_back_to_exit), Toast.LENGTH_SHORT)
-                        .show()
-                }
-                backPressed = System.currentTimeMillis()
-            }
-            R.id.detailsHomeFragment -> {
-                super.onBackPressed()
-            }
-            else -> {
-                super.onBackPressed()
-                navController.navigate(R.id.action_getStartedFragment_to_homeFragment)
-            }
-        }
+        super.onBackPressed()
     }
 
 }
